@@ -1,0 +1,92 @@
+@media (min-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "header header header"
+      "hero hero hero"
+      "body body body"
+      "ad ad ad"
+      "footer footer footer";
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      "brand brand brand"
+      "nav nav tools";
+    grid-area: header;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "header header header"
+      "hero hero hero"
+      "body body ad"
+      "footer footer footer";
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      "brand nav tools"
+      "brand nav tools";
+    grid-area: header;
+  }
+}
+
+.brand {
+  grid-area: brand;
+  background-color: saddlebrown;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: salmon;
+}
+
+.tools {
+  grid-area: tools;
+  background-color: rebeccapurple;
+}
+
+.hero {
+  grid-area: hero;
+  background: url(/Homework-2---Responsive-Lapa/images/wallhaven-0qd7ql_1280x720.png);
+  background-size: cover;
+  min-height: 260px;
+}
+
+.body {
+  grid-area: body;
+  background-color: slategray;
+  max-width: 1200px;
+  display: flex;
+}
+
+.ad {
+  grid-area: ad;
+  background-color: tan;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: wheat;
+}
+
+body {
+  background-color: yellow;
+  border: 50px;
+}
