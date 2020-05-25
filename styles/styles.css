@@ -110,6 +110,16 @@ html {
     width: 100%;
     height: 120px;
   }
+  .ad {
+    grid-area: ad;
+    display: flex;
+    background-image: url(../images/LV_SMScredit_black.png);
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .nav {
