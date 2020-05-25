@@ -32,12 +32,13 @@ body {
     grid-area: hero;
     object-fit: cover;
     background-image: url(../images/50sashlik.jpg);
-    max-width: 576px;
+    max-width: auto;
     height: auto;
-    background-repeat: no-repeat;
     border-radius: 2vmax;
     display: inline-block;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   .brand {
     grid-area: brand;
