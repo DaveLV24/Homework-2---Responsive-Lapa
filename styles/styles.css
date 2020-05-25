@@ -30,11 +30,13 @@ html {
   }
   .hero {
     grid-area: hero;
-    object-fit: fill;
-    background-image: url(../images/50bbq.jpg);
-    width: auto;
-    max-height: 246px;
+    object-fit: cover;
+    background-image: url(../images/50sashlik.jpg);
+    max-width: 621px;
+    height: auto;
     background-repeat: no-repeat;
+    border-radius: 2vmax;
+    display: inline-block;
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
@@ -64,8 +66,9 @@ html {
   }
   .hero {
     grid-area: hero;
-    background-size: cover;
-    background-image: url(../images/50bbq.jpg);
+    display: flex;
+    background-size: contain;
+    background-image: url(../images/sashlik.png);
     width: 100%;
     width: 100%;
     height: 100%;
@@ -75,10 +78,7 @@ html {
 .brand {
   grid-area: brand;
   display: flex;
-  /* margin: 0px;
-  padding: 5px;
   flex-wrap: wrap;
-  width: 100%; */
   background-image: url(../images/brand-logo.jpg);
   background-position: center;
   background-size: contain;
@@ -112,6 +112,8 @@ html {
   grid-area: body;
   background-color: rgb(136, 164, 192);
   display: flex;
+  flex-wrap: wrap;
+  flex: 200px;
 }
 
 .ad {
