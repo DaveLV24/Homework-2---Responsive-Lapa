@@ -1,7 +1,7 @@
 body,
 html {
- height: 100%; 
-  margin: 0;
+  height: 100%;
+  /* margin: 0; */
   font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 576px) {
@@ -27,6 +27,14 @@ html {
       "brand brand brand"
       "nav nav tools";
     grid-area: header;
+  }
+  .hero {
+    grid-area: hero;
+    object-fit: fill;
+    background-image: url(../images/50bbq.jpg);
+    width: auto;
+    max-height: 246px;
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
@@ -54,6 +62,14 @@ html {
     grid-area: header;
     font-size: 1rem;
   }
+  .hero {
+    grid-area: hero;
+    background-size: cover;
+    background-image: url(../images/50bbq.jpg);
+    width: 100%;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .brand {
@@ -62,12 +78,14 @@ html {
   /* margin: 0px;
   padding: 5px;
   flex-wrap: wrap;
-  flex: 200px;
   width: 100%; */
   background-image: url(../images/brand-logo.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .nav {
@@ -88,20 +106,6 @@ html {
   padding: 5px;
   flex-wrap: wrap;
   flex: 200px;
-}
-
-.hero {
-  grid-area: hero;
-  /* background: url(/images/bbq.jpg);
-  background-size: cover;
-box-sizing: border-box;
-  min-height: 260px; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: relative; */
-height: 100%; 
-  max-width: 100%; */
 }
 
 .body {
