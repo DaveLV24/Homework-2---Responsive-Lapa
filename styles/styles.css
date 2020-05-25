@@ -66,7 +66,7 @@ html {
     display: flex;
     margin: 0px;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: cursive;
     align-items: center;
     justify-items: center;
@@ -78,6 +78,7 @@ html {
     display: flex;
     margin: 0px;
     padding: 20px;
+    font-size: 2rem;
     font-family: cursive;
     align-items: center;
     justify-items: center;
@@ -106,6 +107,7 @@ html {
   }
 }
 @media (min-width: 577px) {
+  /* medium devices */
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -128,7 +130,6 @@ html {
       "brand nav tools"
       "brand nav tools";
     grid-area: header;
-    font-size: 1rem;
   }
   .hero {
     grid-area: hero;
@@ -164,7 +165,7 @@ html {
     display: flex;
     margin: 0px;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: cursive;
     align-items: center;
     justify-items: center;
@@ -179,11 +180,13 @@ html {
     font-family: cursive;
     align-items: center;
     justify-items: center;
+    font-size: 2rem;
   }
 
   .body {
     grid-area: body;
     background-color: rgb(136, 164, 192);
+    border-style: inset;
     display: flex;
     flex-wrap: wrap;
     flex: 200px;
