@@ -57,13 +57,13 @@ html {
 
 .brand {
   grid-area: brand;
-  /* /* display: flex;
-  margin: 0px;
+  display: flex;
+  /* margin: 0px;
   padding: 5px;
   flex-wrap: wrap;
   flex: 200px;
   width: 100%; */
-  background-image: url(/images/brand-logo.jpg);
+  background-image: url(../images/brand-logo.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ html {
 
 .hero {
   grid-area: hero;
-  background: url(/images/bbq.jpg);
+  /* background: url(/images/bbq.jpg);
   background-size: cover;
 box-sizing: border-box;
   min-height: 260px; */
@@ -100,7 +100,7 @@ box-sizing: border-box;
   background-size: cover;
   /* position: relative; */
 height: 100%; 
-  max-width: 100%;
+  max-width: 100%; */
 }
 
 .body {
