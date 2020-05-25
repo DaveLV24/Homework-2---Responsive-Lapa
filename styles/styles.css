@@ -1,4 +1,5 @@
-html {
+html,
+body {
   height: 100%;
   max-width: 992px;
   font-family: Arial, Helvetica, sans-serif;
@@ -100,7 +101,7 @@ html {
 
   p {
     font-size: 0.9rem;
-    font-weight: 320;
+    font-weight: 220;
     padding: 5px;
     text-align: justify;
   }
