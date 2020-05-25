@@ -19,6 +19,7 @@ html {
       "footer footer footer";
   }
   .header {
+    grid-area: header;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1.5fr;
     grid-template-rows: 1fr 1fr;
@@ -26,17 +27,26 @@ html {
     grid-template-areas:
       "brand brand brand"
       "nav nav tools";
-    grid-area: header;
   }
   .hero {
     grid-area: hero;
     object-fit: cover;
     background-image: url(../images/50sashlik.jpg);
-    max-width: 621px;
+    max-width: 576px;
     height: auto;
     background-repeat: no-repeat;
     border-radius: 2vmax;
     display: inline-block;
+    background-position: center;
+  }
+  .ad {
+    grid-area: ad;
+    display: flex;
+    background-image: url(../images/LV_SMScredit_black.png);
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 }
@@ -67,14 +77,10 @@ html {
   }
   .hero {
     grid-area: hero;
-    display: flex;
-    background-size: contain;
     background-image: url(../images/sashlik.png);
-    width: 100%;
-    height: 100%;
+    background-size: cover;
   }
 }
-
 .brand {
   grid-area: brand;
   display: flex;
@@ -85,7 +91,6 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  flex-wrap: wrap;
 }
 
 .nav {
@@ -93,9 +98,11 @@ html {
   background-color: salmon;
   display: flex;
   margin: 0px;
-  padding: 5px;
-  flex-wrap: wrap;
-  flex: 200px;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: cursive;
+  align-items: center;
+  justify-items: center;
 }
 
 .tools {
@@ -103,9 +110,10 @@ html {
   background-color: rebeccapurple;
   display: flex;
   margin: 0px;
-  padding: 5px;
-  flex-wrap: wrap;
-  flex: 200px;
+  padding: 20px;
+  font-family: cursive;
+  align-items: center;
+  justify-items: center;
 }
 
 .body {
@@ -116,14 +124,10 @@ html {
   flex: 200px;
 }
 
-.ad {
-  grid-area: ad;
-  background-color: tan;
-}
-
 .footer {
   grid-area: footer;
   background-color: wheat;
+  text-align: center;
 }
 
 p {
