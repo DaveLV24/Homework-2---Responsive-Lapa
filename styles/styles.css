@@ -42,7 +42,7 @@ html {
     grid-area: brand;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../images/brand-logo.jpg);
+    background-image: url(../images/brand-logo-removebg-preview.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ html {
 
   .brand {
     grid-area: brand;
-    background-image: url(../images/brand-logo.jpg);
+    background-image: url(../images/brand-logo-removebg-preview.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
