@@ -32,7 +32,6 @@ body {
     grid-area: hero;
     object-fit: cover;
     background-image: url(../images/50sashlik.jpg);
-    max-width: auto;
     height: auto;
     border-radius: 2vmax;
     display: inline-block;
